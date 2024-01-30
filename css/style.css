@@ -175,11 +175,9 @@ li {
     margin: auto;
     text-align: center;
   }
-  .classification #off {
-    left: 100px;
-  }
+  .classification #off,
   .classification #on {
-    margin-left: -52px;
+    display: none;
   }
   .choices {
     margin-bottom: 20px !important;
@@ -227,7 +225,8 @@ li {
   }
   .card img {
     margin: auto;
-  }form {
+  }
+  form {
     width: 100%;
-}
+  }
 }
