@@ -382,6 +382,14 @@ function styleOn() {
     .card img {
       margin-left: 64px;
     }
+    @media screen and (max-width: 990px) {
+      .card button:not(.buttonHeart) {
+        position: static;
+    }
+    .card i {
+      right: 135px;
+  }
+  }
         `;
   });
   on.style.backgroundColor = "#cbcbcb";
@@ -416,11 +424,13 @@ function searchProducts() {
   searchInput.style.display = "inline-block";
   XSearchBtn.style.display = "inline-block";
   drawItem(filteredProducts);
+  searchBtn.style.marginLeft = "0";
 }
 function XSearchProducts() {
   searchInput.value = "";
   searchInput.style.display = "none";
   XSearchBtn.style.display = "none";
+  searchBtn.style.marginLeft = "-258px";
   drawItem();
 }
 

@@ -13,8 +13,8 @@ li {
 }
 .num {
   position: absolute;
-  right: 90px;
-  top: 8px;
+  right: 3px;
+  top: -1px;
   background-color: rgb(255, 0, 0);
   border-radius: 50%;
   font-size: 11px;
@@ -23,7 +23,7 @@ li {
 .carts_products {
   position: absolute;
   right: 18px;
-  top: 96px;
+  top: 56px;
   width: 250px;
   padding-top: 12px;
   display: none;
@@ -153,4 +153,68 @@ li {
 .swiper-button-next,
 .swiper-button-prev {
   color: #000 !important;
+}
+@media screen and (max-width: 990px) {
+  .card button:not(.buttonHeart) {
+    position: static;
+  }
+  .row {
+    flex-direction: column !important;
+  }
+  .classification,
+  .search-container {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  #XSearchBtn {
+    right: 130px;
+    top: 1px;
+  }
+  .col {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .classification #off {
+    left: 208px;
+  }
+  .choices {
+    margin-bottom: 20px !important;
+    margin-left: -11px !important;
+  }
+  .alll {
+    margin-left: -30px !important;
+  }
+  .search-container {
+    margin-top: 20px !important;
+  }
+  .card i {
+    right: 170px;
+  }
+  .card {
+    width: 32rem !important;
+  }
+  [type="text"] {
+    margin-left: -40px;
+  }
+  .search-container button {
+    margin-left: -258px;
+  }
+  .num {
+    right: -3px;
+    top: 0px;
+  }
+  .carts_products {
+    right: 287px;
+    top: 266px;
+  }
+  .test {
+    top: 105px !important;
+  }
+  .swiper-slide {
+    height: 300px !important;
+}
+.total button {
+  right: 25px;
+}
 }

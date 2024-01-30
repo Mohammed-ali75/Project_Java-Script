@@ -12,6 +12,9 @@
     />
     <title>Products</title>
     <style>
+      .col {
+        flex: 1 0 51% !important;
+      }
       .card button:not(.xx) {
         position: absolute;
         right: 10px;
@@ -29,6 +32,15 @@
       }
       .swiper-slide {
         width: 275px !important;
+      }
+      @media screen and (max-width: 990px) {
+        .card i {
+          bottom: 0px;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -124,7 +136,9 @@
     <div class="container">
       <div class="row my-4">
         <div #swiperRef="" class="swiper mySwiper">
-          <div class="text-center fw-bold fs-3 text-decoration-underline">FAVORITES</div>
+          <div class="text-center fw-bold fs-3 text-decoration-underline">
+            FAVORITES
+          </div>
           <div class="swiper-wrapper here"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
