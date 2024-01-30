@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>World clothes</title>
+    <style></style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold">Apple store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active"> Dropdown </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">Disabled</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav" id="sign">
+            <li>
+              <a
+                class="btn btn-outline-secondary me-3"
+                type="submit"
+                href="login.html"
+                >sign-in</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn btn-outline-secondary"
+                type="submit"
+                href="register.html"
+                >sign-up</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav" id="user-info">
+            <li><a class="nav-link active d-inline" href="" id="user"></a></li>
+            <li>
+              <button class="border-0 bg-dark carts">
+                <i
+                  class="fa-solid fa-cart-shopping nav-link active"
+                  style="font-size: 20px"
+                ></i>
+                <span
+                  class="nav-link active d-inline text-center p-0 num"
+                ></span>
+              </button>
+            </li>
+            <li>
+              <a class="nav-link active d-inline" type="submit" id="logout"
+                >Log Out</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="carts_products border border-2 border-dark text-center rounded-3"
+        >
+          <div class="tt"></div>
+          <a class="nav-link active btn-secondary p-0 go" href=""
+            >View All Products</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="classification">
+            <button id="on" style="background-color: #fff">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button id="off" style="background-color: #cbcbcb">
+              <i class="fa-solid fa-table-list"></i
+              ><i class="fa-solid fa-table-list reverse"></i>
+            </button>
+          </div>
+        </div>
+        <div class="choices col">
+          <select onchange="filterItems(this.value)">
+            <option value="all">All</option>
+            <option value="iPhone">iPhone</option>
+            <option value="MacBook">MacBook</option>
+            <option value="iPad">iPad</option>
+            <option value="Apple Watch">Apple Watch</option>
+          </select>
+        </div>
+        <div class="col alll position-relative">
+          <span class="border border-dark border-1 rounded-3 p-1"
+            >Ranking <i class="fa-solid fa-sort-down"></i
+          ></span>
+          <div
+            class="ranking border border-dark border-1 rounded-3 p-2 position-absolute d-none"
+          >
+            <label class="d-block pb-2">
+              <input
+                type="radio"
+                name="sortOption"
+                id="sortByPriceAsc"
+                onclick="sortProductsByPriceAsc()"
+              />
+              Sort by Price (Low to High)
+            </label>
+            <label class="border-top border-dark pt-2">
+              <input
+                type="radio"
+                name="sortOption"
+                id="sortByPriceDesc"
+                onclick="sortProductsByPriceDesc()"
+              />
+              Sort by Price (High to Low)
+            </label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="search-container">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search..."
+              style="display: none; width: 210px"
+            />
+            <button id="XSearchBtn" style="display: none">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button id="searchBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="productsContainer"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-4 justify-content-sm-center here"></div>
+    </div>
+
+    <script src="js/user.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

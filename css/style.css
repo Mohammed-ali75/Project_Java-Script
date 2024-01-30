@@ -1,0 +1,156 @@
+form {
+  width: 30%;
+  background-color: gainsboro;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 20px;
+}
+#user-info {
+  display: none;
+}
+li {
+  display: inline;
+}
+.num {
+  position: absolute;
+  right: 90px;
+  top: 8px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  font-size: 11px;
+  width: 16px;
+}
+.carts_products {
+  position: absolute;
+  right: 18px;
+  top: 96px;
+  width: 250px;
+  padding-top: 12px;
+  display: none;
+  z-index: 10;
+  background-color: #fff;
+}
+.carts_products a {
+  margin: auto;
+  margin: 12px;
+  margin-top: 0px;
+}
+.card img {
+  width: 286px;
+  margin: auto;
+}
+.card i {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  font-size: 20px;
+}
+.buttonHeart {
+  border: 0;
+  background-color: #ffffff;
+}
+.reverse {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  transform: rotate(180deg);
+}
+.classification,
+.search-container {
+  position: relative;
+  margin-top: 35px;
+  font-size: 20px;
+}
+.search-container button {
+  border: 0;
+  background-color: #fff;
+}
+.classification #on i {
+  margin-left: 2px;
+}
+.classification #off i {
+  margin-right: 2px;
+}
+.classification button {
+  border: 1px solid;
+}
+.classification #on {
+  border-radius: 20px 0px 0px 20px;
+}
+.classification #off {
+  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  left: 30px;
+}
+.search-container {
+  float: right;
+}
+.alll {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 20px;
+  margin-right: 4.8rem;
+}
+.alll:hover .ranking {
+  display: block !important;
+}
+.ranking {
+  width: 100%;
+  left: 0px;
+  top: 35px;
+  z-index: 1;
+  background-color: #fff;
+}
+#XSearchBtn {
+  position: absolute;
+  right: 41px;
+  top: 2px;
+}
+.tt p {
+  color: #000;
+}
+.carts_products div p:hover {
+  color: #000;
+}
+.increase-btn {
+  border: 0;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.choices {
+  margin-top: 34px;
+  font-size: 20px;
+  margin-left: 9rem;
+}
+.card-body .card-num {
+  position: absolute;
+  top: 45px;
+  right: 50px;
+  font-size: 22px;
+}
+.total {
+  position: relative;
+}
+.total-price {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: gainsboro;
+}
+.total button {
+  position: absolute;
+  right: 52px;
+  top: 0.5px;
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid;
+}
+.total button:hover {
+  background-color: #d3d3d3;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000 !important;
+}
