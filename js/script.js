@@ -385,11 +385,14 @@ function styleOn() {
     @media screen and (max-width: 990px) {
       .card button:not(.buttonHeart) {
         position: static;
+      }
+      .card i {
+        right: 35px;
+      }
+      .card img {
+        margin-left: -4px;
+      }
     }
-    .card i {
-      right: 135px;
-  }
-  }
         `;
   });
   on.style.backgroundColor = "#cbcbcb";
@@ -430,7 +433,7 @@ function XSearchProducts() {
   searchInput.value = "";
   searchInput.style.display = "none";
   XSearchBtn.style.display = "none";
-  searchBtn.style.marginLeft = "-258px";
+  searchBtn.style.marginLeft = "-212px";
   drawItem();
 }
 

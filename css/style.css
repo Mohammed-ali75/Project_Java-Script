@@ -167,8 +167,8 @@ li {
     margin-bottom: 20px;
   }
   #XSearchBtn {
-    right: 130px;
-    top: 1px;
+    right: 45px;
+    top: 2px;
   }
   .col {
     width: 100%;
@@ -176,7 +176,10 @@ li {
     text-align: center;
   }
   .classification #off {
-    left: 208px;
+    left: 100px;
+  }
+  .classification #on {
+    margin-left: -52px;
   }
   .choices {
     margin-bottom: 20px !important;
@@ -189,32 +192,42 @@ li {
     margin-top: 20px !important;
   }
   .card i {
-    right: 170px;
+    right: 75px;
   }
   .card {
-    width: 32rem !important;
+    width: 19rem !important;
   }
-  [type="text"] {
+  [type="text"]:not(.form-control) {
     margin-left: -40px;
   }
   .search-container button {
-    margin-left: -258px;
+    margin-left: -212px;
   }
   .num {
     right: -3px;
     top: 0px;
   }
   .carts_products {
-    right: 287px;
-    top: 266px;
+    right: 68px;
+    top: 262px;
   }
   .test {
     top: 105px !important;
+    right: 22px !important;
   }
   .swiper-slide {
     height: 300px !important;
-}
-.total button {
-  right: 25px;
+  }
+  .total button {
+    right: 0px;
+    top: -40.5px;
+  }
+  .ranking {
+    left: 30px;
+  }
+  .card img {
+    margin: auto;
+  }form {
+    width: 100%;
 }
 }
